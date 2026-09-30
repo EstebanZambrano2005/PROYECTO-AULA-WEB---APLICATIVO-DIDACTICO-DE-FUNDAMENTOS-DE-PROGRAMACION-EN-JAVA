@@ -1,4 +1,4 @@
-<img width="855" height="892" alt="image" src="https://github.com/user-attachments/assets/5dc8e14b-43c4-41c8-9dc5-89600b610ad7" />Documentación de Diseño y Arquitectura — AulaLógica Web
+Documentación de Diseño y Arquitectura — AulaLógica Web
 
 1. Ficha del Problema y Usuario Objetivo
 Título del Proyecto: AulaLógica Web — Aplicativo Didáctico de Fundamentos de Programación en Java
@@ -7,7 +7,8 @@ Problema: Dificultad para visualizar la ejecución de algoritmos y comprender co
 Solución: Plataforma web local con Spring Boot que ofrece explicaciones, prácticas interactivas con retroalimentación inmediata y evaluaciones.
 
 Historia de Usuario Modelo
-> Como un estudiante que inicia en programación, quiere resolver un ejercicio de condicionales y recibir una explicación detallada del resultado, para poder comprender por qué se ejecutó una rama específica del programa.
+> *Como* estudiante que inicia en programación, *quiero* resolver un ejercicio de condicionales y recibir una explicación detallada del resultado, *para* comprender por qué se ejecutó una rama específica del programa.
+
 Matriz de Requisitos
 
 | ID | Tipo | Descripción | Prioridad |
@@ -39,10 +40,6 @@ graph TD
     D --> E[Evaluación del Módulo]
     E --> F[Resultados y Retroalimentación]
 ```
-
-4. Diagrama de Clases del Modelo (Spring Boot)
-```mermaid
-
 classDiagram
     class Tema {
         +Long id
@@ -62,3 +59,4 @@ classDiagram
     Tema "1" -- "1" Evaluacion
 ```
 
+    
