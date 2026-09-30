@@ -8,6 +8,16 @@ Solución: Plataforma web local con Spring Boot que ofrece explicaciones, práct
 
 Historia de Usuario Modelo
 > Como un estudiante que inicia en programación, quiere resolver un ejercicio de condicionales y recibir una explicación detallada del resultado, para poder comprender por qué se ejecutó una rama específica del programa.
+Matriz de Requisitos
+
+| ID | Tipo | Descripción | Prioridad |
+|---|---|---|---|
+| **RF-01** | Funcional | Presentar contenidos teóricos y explicaciones didácticas sobre lógica y sintaxis de Java. | Alta |
+| **RF-02** | Funcional | Permitir la resolución interactiva de ejercicios de condicionales y ciclos con retroalimentación inmediata. | Alta |
+| **RF-03** | Funcional | Generar evaluaciones diagnósticas y calcular el puntaje obtenido por el estudiante. | Media |
+| **RNF-01** | No Funcional | Desarrollado en Java usando Spring Boot y motor de plantillas Thymeleaf. | Alta |
+| **RNF-02** | No Funcional | Arquitectura modular basada en el patrón MVC (Modelo-Vista-Controlador). | Alta |
+| **RNF-03** | No Funcional | Interfaz ligera, clara y responsiva para ejecución en entorno local. | Media |
 
 ---
 
