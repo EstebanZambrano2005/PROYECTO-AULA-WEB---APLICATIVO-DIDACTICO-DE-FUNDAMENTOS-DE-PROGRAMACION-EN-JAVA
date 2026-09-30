@@ -14,5 +14,5 @@ Historia de Usuario Modelo
 2. Arquitectura MVC por Capas
 Vista (View - HTML5 + CSS3 + Thymeleaf): Captura entradas del usuario en formularios y muestra el contenido didáctico y retroalimentación.
 Controlador (Controller - `@Controller`): Recibe las peticiones HTTP, gestiona rutas y delega la lógica a la capa de servicio.
-Servicio (Service - `@Service`):** Contiene la lógica didáctica, realiza cálculos, aplica validaciones y determina puntajes.
+Servicio (Service - `@Service`): Contiene la lógica didáctica, realiza cálculos, aplica validaciones y determina puntajes.
 Modelo (Model): Representa las clases de datos (`Tema`, `Ejercicio`, `Pregunta`, `Resultado`) gestionadas en memoria.
