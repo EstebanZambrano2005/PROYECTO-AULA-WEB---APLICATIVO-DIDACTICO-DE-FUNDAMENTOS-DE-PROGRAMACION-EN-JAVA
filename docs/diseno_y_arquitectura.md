@@ -1,4 +1,4 @@
-Documentación de Diseño y Arquitectura — AulaLógica Web
+<img width="855" height="892" alt="image" src="https://github.com/user-attachments/assets/5dc8e14b-43c4-41c8-9dc5-89600b610ad7" />Documentación de Diseño y Arquitectura — AulaLógica Web
 
 1. Ficha del Problema y Usuario Objetivo
 Título del Proyecto: AulaLógica Web — Aplicativo Didáctico de Fundamentos de Programación en Java
@@ -16,3 +16,39 @@ Vista (View - HTML5 + CSS3 + Thymeleaf): Captura entradas del usuario en formula
 Controlador (Controller - `@Controller`): Recibe las peticiones HTTP, gestiona rutas y delega la lógica a la capa de servicio.
 Servicio (Service - `@Service`): Contiene la lógica didáctica, realiza cálculos, aplica validaciones y determina puntajes.
 Modelo (Model): Representa las clases de datos (`Tema`, `Ejercicio`, `Pregunta`, `Resultado`) gestionadas en memoria.
+
+---
+
+3. Diagrama de Navegación y Flujo del Estudiante
+
+```mermaid
+graph TD
+    A[Inicio / Portal] --> B[Lista de Módulos]
+    B --> C[Lección de Contenido Didáctico]
+    C --> D[Práctica Interactiva]
+    D --> E[Evaluación del Módulo]
+    E --> F[Resultados y Retroalimentación]
+```
+
+4. Diagrama de Clases del Modelo (Spring Boot)
+```mermaid
+
+classDiagram
+    class Tema {
+        +Long id
+        +String titulo
+        +String descripcion
+    }
+    class Ejercicio {
+        +Long id
+        +String enunciado
+        +String codigoBase
+    }
+    class Evaluacion {
+        +Long id
+        +int puntajeMaximo
+    }
+    Tema "1" -- "*" Ejercicio
+    Tema "1" -- "1" Evaluacion
+```
+
