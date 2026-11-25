@@ -1,5 +1,6 @@
-# AulaLógica Web — Aplicativo Didáctico de Fundamentos de Programación en Java
-
+<p align="center">
+  <img src="banner.svg" alt="banner" width="100%">
+</p>
 Descripción del Proyecto
 AulaLógica Web es un aplicativo web educativo diseñado para acompañar a estudiantes universitarios en el aprendizaje de los fundamentos de programación y algoritmos usando Java y Spring Boot.
 
